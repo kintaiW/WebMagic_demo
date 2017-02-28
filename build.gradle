@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile(
+	"us.codecraft:webmagic-core:0.6.1",
+	"us.codecraft:webmagic-core:0.6.1",
+	files('/home/kintai/.m2/repository/us/codecraft')
+    )
+}
+
+task run(type: JavaExec, dependsOn: 'classes') {
+    description '运行指定main函数的java'
+    classpath = sourceSets.main.runtimeClasspath
+    if(project.hasProperty('main')){
+        main = "${project.getProperty('main')}"
+    }
+}

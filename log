@@ -1,0 +1,29 @@
+:compileJava UP-TO-DATE
+:processResources UP-TO-DATE
+:classes UP-TO-DATE
+:run
+get page: https://cscroll.herokuapp.com/doc.json
+get page: https://cscroll.herokuapp.com/doc/build_system
+json_title:	构建系统
+get page: https://cscroll.herokuapp.com/doc/docker_practice
+json_title:	Docker实践
+get page: https://cscroll.herokuapp.com/doc/ubuntu_skills
+json_title:	Ubuntu相关
+get page: https://cscroll.herokuapp.com/doc/vlc_app
+json_title:	Vlc项目点滴
+get page: https://cscroll.herokuapp.com/doc/webmagic_explore
+json_title:	WebMagic初探
+get page: https://cscroll.herokuapp.com/doc/heroku_sinatra_app
+json_title:	heroku部署sinatra说明
+get page: https://cscroll.herokuapp.com/doc/code_editor
+json_title:	编辑器
+get page: https://cscroll.herokuapp.com/doc/glean_c
+json_title:	C语言拾遗
+get page: https://cscroll.herokuapp.com
+main_title:	heroku部署sinatra说明
+
+BUILD SUCCESSFUL
+
+Total time: 25.793 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html
